@@ -1,1 +1,1 @@
-# Material associated with Physics Report "﻿Data science applications to string theory"
+Data science applications to string theory
