@@ -3,7 +3,7 @@
 ## Keras example
 Run with `python Keras_Example.py` or look at the Jupyter notebook [Keras_Example.ipynb](./Keras_Example/Keras_Example.ipynb).
 
-![Prediction Keras](./Keras_Example/example_function.png =300x"Predicted region of stability.")
+![Prediction Keras](./Keras_Example/example_function.png =300x)
 ![Loss Keras](Keras_Example/example_loss.png =300x "Loss for function in Keras.")
 
 ## Mathematica example
