@@ -9,7 +9,7 @@ The [A3C implementation](./A3C) uses two NNs. Both have 3 hidden layers with 50 
 The two NNs (as plotted by Chainer):
 <table>
 	<tr>
-		<td><img src="./A3C/model_pi.png" width="400px"/></td><td><img src="./A3C/model_v.png" width="400px"/></td>
+		<td><img src="./A3C/model_pi.png" width="600px"/></td><td><img src="./A3C/model_v.png" width="400px"/></td>
 	</tr>
 	<tr>
 		<td>Policy NN.</td><td>Value function NN.</td>
@@ -25,8 +25,9 @@ python TTT_GUI.py
 
 The NN will show you the output of the policy and state value NN, i.e. the percentage for each of the 9 actions, as well as an overall score for the board.
 
-<img src="./A3C/screenshot.png" width="400px"/>
-
+<center>
+<img src="./A3C/screenshot.png" width="600px"/>
+</center>
 
 ### Train the NN
 The agent was programmed and tested on Chainer 6.0.0, ChainerRL 0.6.0 and gym 0.12.5 with python 3.7.
