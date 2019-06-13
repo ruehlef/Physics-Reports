@@ -7,8 +7,14 @@ Both networks are not too bad Tic Tac Toe players, but are also far from perfect
 The [A3C implementation](./A3C) uses two NNs. Both have 3 hidden layers with 50 nodes and `tanh` activation. The last layer of the policy network has a 'softmax' activation, while the value network has an `identity` activation.
 
 The two NNs (as plotted by Chainer):
-![Policy NN](./A3C/model_pi.png =250x "Policy NN") | ![Value function NN](./A3C/model_v.png =250x "Value function NN") 
-Policy NN. | Value function NN.
+<table>
+	<tr>
+		<td><img src="./A3C/model_pi.png" width="300px"/></td><td><img src="./A3C/model_v.png" width="300px"/></td>
+	</tr>
+	<tr>
+		<td>Policy NN.</td><td>Value function NN.</td>
+    </tr>
+</table>
 
 ### Play against NN
 If you want to play against the trained NN, simply execute
@@ -19,7 +25,8 @@ python TTT_GUI.py
 
 The NN will show you the output of the policy and state value NN, i.e. the percentage for each of the 9 actions, as well as an overall score for the board.
 
-![A3C TTT Screenshot](./A3C/TTT_GUI_screenshot.png =250x "A3C TTT Screenshot")
+<img src="./A3C/TTT_GUI_screenshot.png" width="300px"/>
+
 
 ### Train the NN
 The agent was programmed and tested on Chainer 6.0.0, ChainerRL 0.6.0 and gym 0.12.5 with python 3.7.
@@ -73,7 +80,8 @@ The `8` is the number of asynchronous processes (agents). The program will creat
 The [DQN implementation](./DQN) uses a single NN to guess the action value function. The NN has 2 hidden layers with 100 nodes and `ReLU` activation. The last layer has an `identity` activation, i.e. in DQN we do not use a `softmax` activation but simply use the action that has the highest q-value.
 
 The NN (as plotted by Chainer):
-![DQN](./DQN/model.png =250x "DQN")
+
+<img src="./DQN/model.png" width="300px"/>
 
 ### Play against NN
 If you want to play against the trained NN, simply execute
@@ -84,7 +92,7 @@ python TTT_GUI.py
 
 The NN will show you the output of the policy NN, i.e. the value of each of the 9 actions.
 
-![DQN TTT Screenshot](./DQN/TTT_GUI_screenshot.png =250x "DQN TTT Screenshot")
+<img src="./DQN/TTT_GUI_screenshot.png" width="300px"/>
 
 ### Train the NN
 The agent was programmed and tested on Chainer 6.0.0, ChainerRL 0.6.0 and gym 0.12.5 with python 3.7.
@@ -121,10 +129,10 @@ def reward(self, reward):
 i.e. remove the underscore.
 
 ##### 3.) Replace the file `site-packages/chainerrl/experiments/train_agent.py` 
-Replace it with [train_agent.py](./A3C/train_agent.py) file from the [DQN directory](./DQN).
+Replace it with [train_agent.py](./DQN/train_agent.py) file from the [DQN directory](./DQN).
 
 ##### 4.) Run the training script
-Now you can train the agent by going to the DQN directory  and running
+Now you can train the agent by changing to the DQN directory and running
 
 ```
 python train_dqn_gym.py
