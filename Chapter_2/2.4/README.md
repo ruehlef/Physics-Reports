@@ -12,21 +12,16 @@ In chapter 2.4 we illustrate important layers in convolutional neural networks, 
 If the stride in any direction is smaller than the kernel size, parts of the image will be read multiple times by the kernel. This is illustrated in the Figure below for 
 
 ```python
-	kernel_size=100
-	stride=50
+	kernel_size=100, stride=50
 ```
 
-![Original](./CNN_original.png "Original image.")
-![Convollved](./CNN_example_explodedImage.png "Convolved image.")
+<img src="./CNN_original.png" width="300px"/> <img src="./CNN_example_explodedImage.png" width="300px"/>
 
 
 ## Covolutions
 The effect of covolving an RGB image (over all 3 color channels) for different `stride` and `kernel_size` parameters:
-![Convolution 1](./CNN_after_conv1.png "Convolution 1.")
-![Convolution 2](./CNN_after_conv2.png "Convolution 2.")
-
+<img src="./CNN_after_conv1.png "Convolution 1." width="300px"/> <img src="./CNN_after_conv2.png "Convolution 2." width="300px"/>
 
 ## Max pooling
 The effect of max pooling on an RGB image for different `stride` and `kernel_size` parameters:
-![Pooling 1](./CNN_after_pooling1.png "Pooling 1.")
-![Pooling 2](./CNN_after_pooling2.png "Pooling 2.")
+<img src="./CNN_after_pooling1.png "Pooling 1." width="300px"/> <img src="./CNN_after_pooling2.png "Pooling 2." width="300px"/>
