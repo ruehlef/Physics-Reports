@@ -6,11 +6,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  Mathematica_Example
  <link href="HTMLFiles/Mathematica_Example.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+<a href=" http://htmlpreview.github.com/?https://github.com/bartaz/impress.js/blob/master/index.html">To display this file properly open it outtside of Github.</a>
 
 <p class="Section">
  Mathematica implementation of the simple NN that classifies bundle stability (cf.Section 2.1)
