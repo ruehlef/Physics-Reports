@@ -1,6 +1,6 @@
 # Chapter 2.1
 
-![](Keras_Example/example_function.png)
+![](Keras_Example/example_function.png | width=100)
 
 ## Keras example
 Run with `python Keras_Example.py` or look at the Jupyter notebook [Keras_Example.ipynb](./Keras_Example/Keras_Example.ipynb).
