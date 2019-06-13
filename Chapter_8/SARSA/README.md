@@ -10,7 +10,7 @@ Below we illustrate the route through the maze taken by an untrained agent and b
 
 <table>
 	<tr>
-      <td><img src="./Untrained_worker.gif"></td><td><img src="./Trained_worker.gif"></td>
+      <td align="center"><img src="./Untrained_worker.gif"></td><td align="center"><img src="./Trained_worker.gif"></td>
 	</tr>
 	<tr>
       <td>Untrained worker. Performs essentially a random walk. 4 steps to pitfall.</td><td>Same worker trained for roughly 5 seconds (6,000 games). 8 steps to solution.</td>
