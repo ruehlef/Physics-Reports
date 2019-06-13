@@ -1,4 +1,4 @@
-# Repository for "Data science in string theory"
+# Repository for Physics  Report: Data science in string theory
 
 In this repository, you can find material used in the Physics Report book "Data science in string theory". It is meant to get you started by providing simple example codes for the various data science techniques introduced in the book.
 
@@ -41,10 +41,10 @@ Feel free to use and modify the code at will. If you find this useful, you could
   * In [Chapter 9.3](Chapter_9/9.3) we introduce various **Support Vector Machines** for clustering or regression
   
   
-# How to get started  with the code
+# How to get started with the code
 Most of the examples use Python. Chances are you already have (at least) one Python environment on your system. If not, install one (e.g. Miniconda or Anaconda). I used python3 in all my examples. I think they should also work with python2, but I have not tested them. Since python2 support runs out end of 2019, it is probably better to start with python3 anyways.
 
-I also recommend using a development environemnt for python. I use PyCharm, but there are many different ones around. This has several advantages:
+I also recommend using a development environemnt for python. I use PyCharm, but there are [many different ones](https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments#Python) around. This has several advantages:
 
 * You can easily debug your code by adding breakpoints, looking at and chaning the value of variables in your program, etc.
 * You can easily create a virtual envoironment, install packages, etc.
@@ -88,7 +88,7 @@ You can also upgrade existing packages using
 pip install --user --upgrade xxx
 ```
 
-Some packages you might want to install are
+Some packages you might want to install foor  using the code provided here are
 
 * `numpy`
 * `scipy`
