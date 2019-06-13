@@ -8,8 +8,8 @@ The maze is called **Gridworld**, since you can move on a grid. I also [presente
 #### Route
 Below we illustrate the route through the maze taken by an untrained agent and by an agent that has been trained for 6,000 episodes.
 
-!["Untrained worker"](./Untrained_worker.gif "Untrained worker.") | !["Trained worker"](./Trained_worker.gif "Trained worker.")
-Untrained worker. Performs essentially a random walk. 4 steps to pitfall. | Same worker trained for roughly 5 seconds (6,000 games). 8 steps to solution.
+| !["Untrained worker"](./Untrained_worker.gif "Untrained worker.") | !["Trained worker"](./Trained_worker.gif "Trained worker.") |
+| Untrained worker. Performs essentially a random walk. 4 steps to pitfall. | Same worker trained for roughly 5 seconds (6,000 games). 8 steps to solution. |
 
 #### Action-Value
 The action-value function Q=Q(s,a) in this case is a 5 x  5 x 4 array, since each of the 5 x 5 grid positions has 4 possible actions (up, down, left, right), and each action has a separate value. In order to illustrate Q, we plot at each grid position of the maze the best next action with an arrow (in case several actions are considered equally good, a random one is chosen). The color coding shows the degree of certainty with which the agent deems this move to be the best.
