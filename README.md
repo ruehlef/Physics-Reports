@@ -5,7 +5,7 @@ In this repository, you can find material used in the Physics Report book "Data 
 Feel free to use and modify the code at will. If you find this useful, you could consider [citing](bibliography.bib) the book in your work. 
 
 # Content
-* [Chapter 2](./Chapter_2/README.md) introduces common neural network layers.
+* [Chapter 2](Chapter_2/README.md) introduces common neural network layers.
   * In [Chapter 2.1](Chapter_2/2.1) we implement an extremely simple fully connected feed-forward neural network. It solves the binary classification task introduced in Chapter 2.1. We implement the network and the training in different languages to illustrate how to use them:
 	  - Keras
 	  - Mathematica
@@ -18,7 +18,7 @@ Feel free to use and modify the code at will. If you find this useful, you could
   
 * [Chapter 3](Chapter_3) illustrates over- and underfitting, as well as the regularizing effect of dropout layers and weight decay.
 
-* [Chapter 5](Chapter_5/GA_Example.htm) illustrates the extremization of a simple 2D function using **Genetic Algorithms**.
+* [Chapter 5](Chapter_5) illustrates the extremization of a simple 2D function using **Genetic Algorithms**.
 
 * [Chapter 6](Chapter_6) illustrates the  computation of persistent homology of a point cloud that lies on a cylinder surface in JAVAPLEX via [Jython](Chapter_6/Jython) and [JAVA](Chapter_6/JAVA)
 
@@ -32,9 +32,9 @@ Feel free to use and modify the code at will. If you find this useful, you could
 
 * [Chapter 8](Chapter_8) introduces several codes related to **Reinforcement learning**. We provide an example for both tabular and deep RL.
   * In [Chapter 8 SARSA](Chapter_8/SARSA) we introduce a tabular method to solve a maze using the SARSA algorithm. This example is discussed in Chapter 8.5 of the book.
-  * In [Chapter 8 DEEP_RL](Chapter_8/DEEP_RL) we illustrate the **A3C** and **DQN** algorithm discussed in Chapter 8.6 of the book by training an agent to play Tic Tac Toe. This is meant to illustrate the algorithms and to show how to use Chainerrl together with the gym environment to train RL agents. You can then play the game against the trained agent to see how it behaves, which tactics it learned/didn't learn, which moves it was considering, etc.
-      - [A3C](Chapter_8/DEEP_RL/A3C) contains the A3C implementation
-	  - [DQN](Chapter_8/DEEP_RL/DQN) contains the DQN implementation
+  * In [Chapter 8 Deep_RL](Chapter_8/Deep_RL) we illustrate the **A3C** and **DQN** algorithm discussed in Chapter 8.6 of the book by training an agent to play Tic Tac Toe. This is meant to illustrate the algorithms and to show how to use Chainerrl together with the gym environment to train RL agents. You can then play the game against the trained agent to see how it behaves, which tactics it learned/didn't learn, which moves it was considering, etc.
+      - [A3C](Chapter_8/Deep_RL/A3C) contains the A3C implementation
+	  - [DQN](Chapter_8/Deep_RL/DQN) contains the DQN implementation
 	
 * [Chapter 9](Chapter_9) introduces several codes related to **supervised learning techniques** beyond neural networks.
   * In [Chapter 9.2](Chapter_9/9.2) we introduce various **Decision Trees** and **Random Forest** implementations that can be used in clustering or regression
