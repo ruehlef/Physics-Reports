@@ -5,7 +5,7 @@ In this repository, you can find material used in the Physics Report book "Data 
 Feel free to use and modify the code at will. If you find this useful, you could consider [citing](./bibliography.bib) the book in your work. 
 
 # Content
-* [Chapter 2](./Chapter 2) introduces common neural network layers.
+* [Chapter 2](./Chapter%202) introduces common neural network layers.
   * In [Chapter 2.1](./Chapter%202.1/README.md) we implement an extremely simple fully connected feed-forward neural network. It solves the binary classification task introduced in Chapter 2.1. We implement the network and the training in different languages to illustrate how to use them:
 	  - Keras
 	  - Mathematica
