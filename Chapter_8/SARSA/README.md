@@ -20,8 +20,11 @@ Below we illustrate the route through the maze taken by an untrained agent and b
 #### Action-Value
 The action-value function Q=Q(s,a) in this case is a 5 x  5 x 4 array, since each of the 5 x 5 grid positions has 4 possible actions (up, down, left, right), and each action has a separate value. In order to illustrate Q, we plot at each grid position of the maze the best next action with an arrow (in case several actions are considered equally good, a random one is chosen). The color coding shows the degree of certainty with which the agent deems this move to be the best.
 
-!["1 episode"](./0.pdf "1 episode.") | !["1000 episodes"](./1000.pdf "1000 episodes.") | !["2000 episodes"](./2000.pdf "2000 episodes.")
-!["3000 episodes"](./3000.pdf "3000 episodes.") | !["4000 episodes"](./4000.pdf "4000 episodes.") | !["6000 episode"](./6000.pdf "6000 episodes.")
-
-
-
+<table>
+	<tr>
+      <td align="center"><img src="./0.png"></td><td align="center"><img src="./1000.png"></td><td align="center"><img src="./2000.png"></td>
+	</tr>
+	<tr>
+      <td align="center"><img src="./3000.png"></td><td align="center"><img src="./4000.png"></td><td align="center"><img src="./6000.png"></td>
+	</tr>
+</table>
