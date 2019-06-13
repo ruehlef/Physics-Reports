@@ -7,7 +7,7 @@ Run with `python Keras_Example.py` or look at the Jupyter notebook [Keras_Exampl
 <img src="./Keras_Example/example_function.png" width="300px"/> <img src="./Keras_Example/example_loss.png" width="300px"/>
 
 ## Mathematica example
-Run the notebook `Mathematica_Example.nb` or look at the html at [Mathematica_Example.htm](Mathematica_Example/Mathematica_Example.htm)
+Run the notebook `Mathematica_Example.nb` or look at the html at [Mathematica_Example.htm](http://htmlpreview.github.com/?https://github.com/ruehlef/Physics-Reports/tree/master/Chapter_2/2.1/Mathematica_Example/Mathematica_Example.htm)
 
 <img src="./Mathematica_Example/example_function.png" width="300px"/> <img src="./Mathematica_Example/example_loss.png" width="300px"/>
 
