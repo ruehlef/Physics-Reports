@@ -8,7 +8,7 @@ The Jython implementation can be found [here](./Jython/). Just run
 jython Persistent_Homology_in_Jython.py
 ```
 
-You will have to set the path to your javaplex.jar.
+You will have to set the path to your `javaplex.jar` in the file `Persistent_Homology_in_Jython.py`.
 
 
 ## Java Implementation
