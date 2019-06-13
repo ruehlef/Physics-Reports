@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<a href=" http://htmlpreview.github.com/?https://github.com/bartaz/impress.js/blob/master/index.html">To display this file properly open it outtside of Github.</a>
+<a href="http://htmlpreview.github.com/?https://github.com/bartaz/impress.js/blob/master/index.html">To display this file properly open it outtside of Github.</a>
 
 <p class="Section">
  Mathematica implementation of the simple NN that classifies bundle stability (cf.Section 2.1)
