@@ -1,7 +1,7 @@
 # Chapter 8 - Deep RL
 In this chapter we train deep RL agents to learn to play **Tic Tac Toe** tabula rasa, i.e. without any prior knowledge. We use both a **Deep Q Network** and a an **(Asynchronous) Advantage Actor-Critic** with a NN for the policy and state value evaluation.
 
-Both networks are not too bad Tic Tac Toe players, but are also far from perfect players. If you play against them, they are *not* trained further. Furthermore, they act greedily, i.e. they always perform the best next action. This means that once you've found a strategy to beat it, this strategy will work every time. Probably the performance can be improved by training them longer or tune the hyperparameters. I have trained the agents for less than 30 minutes on my laptop.
+Both networks are not too bad Tic Tac Toe players, but are also far from perfect players. If you play against them, they are *not* trained further. Furthermore, they act greedily, i.e. they always perform the best next action. This means that once you've found a strategy to beat it, this strategy will work every time. Probably the performance can be improved by training them longer or tune the hyperparameters. I have trained the agents for less than 30 minutes on my laptop. The DQN agent plays somewhat better than the A3C agent.
 
 ## A3C
 The [A3C implementation](./A3C) uses two NNs. Both have 3 hidden layers with 50 nodes and `tanh` activation. The last layer of the policy network has a 'softmax' activation, while the value network has an `identity` activation.
