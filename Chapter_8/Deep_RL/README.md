@@ -9,7 +9,7 @@ The [A3C implementation](./A3C) uses two NNs. Both have 3 hidden layers with 50 
 The two NNs (as plotted by Chainer):
 <table>
 	<tr>
-		<td><img src="./A3C/model_pi.png" width="600px"/></td><td><img src="./A3C/model_v.png" width="400px"/></td>
+		<td><img src="./A3C/model_pi.png" width="500px"/></td><td><img src="./A3C/model_v.png" width="500px"/></td>
 	</tr>
 	<tr>
 		<td>Policy NN.</td><td>Value function NN.</td>
@@ -25,9 +25,7 @@ python TTT_GUI.py
 
 The NN will show you the output of the policy and state value NN, i.e. the percentage for each of the 9 actions, as well as an overall score for the board.
 
-<center>
-<img src="./A3C/screenshot.png" width="600px"/>
-</center>
+<img src="./A3C/screenshot.png" width="800px"/>
 
 ### Train the NN
 The agent was programmed and tested on Chainer 6.0.0, ChainerRL 0.6.0 and gym 0.12.5 with python 3.7.
@@ -82,7 +80,7 @@ The [DQN implementation](./DQN) uses a single NN to guess the action value funct
 
 The NN (as plotted by Chainer):
 
-<img src="./DQN/model.png" width="400px"/>
+<img src="./DQN/model.png" width="500px"/>
 
 ### Play against NN
 If you want to play against the trained NN, simply execute
@@ -93,7 +91,7 @@ python TTT_GUI.py
 
 The NN will show you the output of the policy NN, i.e. the value of each of the 9 actions.
 
-<img src="./DQN/screenshot.png" width="400px"/>
+<img src="./DQN/screenshot.png" width="800px"/>
 
 ### Train the NN
 The agent was programmed and tested on Chainer 6.0.0, ChainerRL 0.6.0 and gym 0.12.5 with python 3.7.
