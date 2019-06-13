@@ -5,7 +5,7 @@ In this repository, you can find material used in the Physics Report book "Data 
 Feel free to use and modify the code at will. If you find this useful, you could consider [citing](./bibliography.bib) the book in your work. 
 
 # Content
-* [Chapter 2](./Chapter%202/README.md) introduces common neural network layers.
+* [Chapter 2](./Chapter 2) introduces common neural network layers.
   * In [Chapter 2.1](./Chapter%202.1/README.md) we implement an extremely simple fully connected feed-forward neural network. It solves the binary classification task introduced in Chapter 2.1. We implement the network and the training in different languages to illustrate how to use them:
 	  - Keras
 	  - Mathematica
@@ -58,7 +58,9 @@ python3 -m venv ~/my_venv
 where `~/my_venv` is where the new environment shall be stored (feel free to use anything else).
 
 2. Activate the virtual environment. To activate it enter 
-```source ~/my_venv/bin/activate```
+```
+source ~/my_venv/bin/activate
+```
 
 3. Do whatever you want to do, e.g. `pip install numpy` or `python hello_world.py`.
 
