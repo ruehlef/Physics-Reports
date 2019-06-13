@@ -1,5 +1,6 @@
 # OSX
 .DS_Store
+.gitignore.swp
 
 # Thumbnails
 ._*
