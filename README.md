@@ -51,9 +51,14 @@ It is best to create a virtual environment and install the packages there, in or
 
 To set up a virtual environment using an existing python installation, follow [these instructions](https://docs.python.org/3/library/venv.html). The steps are really simple. On Linux/Mac do the following:
 
-1. Create the virtual environment. In a shell enter `python3 -m venv ~/my_venv` where `~/my_venv` is where the new environment shall be stored (feel free to use anything else).
+1. Create the virtual environment. In a shell enter 
+```
+python3 -m venv ~/my_venv
+``` 
+where `~/my_venv` is where the new environment shall be stored (feel free to use anything else).
 
-2. Activate the virtual environment. To activate it enter `source ~/my_venv/bin/activate`.
+2. Activate the virtual environment. To activate it enter 
+```source ~/my_venv/bin/activate```
 
 3. Do whatever you want to do, e.g. `pip install numpy` or `python hello_world.py`.
 
