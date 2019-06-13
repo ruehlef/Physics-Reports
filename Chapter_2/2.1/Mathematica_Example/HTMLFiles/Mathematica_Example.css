@@ -4,7 +4,7 @@ html {
   padding: 8px;
 }
 /* Title:*/
-.Title {
+div#title {
   font-size: 45px;
   font-family: Source Sans Pro;
   color: #CC0B02;

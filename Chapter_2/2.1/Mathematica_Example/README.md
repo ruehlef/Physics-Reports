@@ -6,16 +6,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
- <title>
+ <div id="title">
   Mathematica_Example
- </title>
+ </div>
  <link href="HTMLFiles/Mathematica_Example.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<title>
-  Mathematica_Example
-</title>
 
 <p class="Section">
  Mathematica implementation of the simple NN that classifies bundle stability (cf.Section 2.1)
