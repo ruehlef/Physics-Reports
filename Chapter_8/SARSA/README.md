@@ -22,9 +22,9 @@ The action-value function Q=Q(s,a) in this case is a 5 x  5 x 4 array, since eac
 
 <table>
 	<tr>
-      <td align="center"><img src="./0.png"></td><td align="center"><img src="./1000.png"></td><td align="center"><img src="./2000.png"></td>
+      <td align="center" padding=0 border=0><img src="./0.png"></td><td align="center" padding=0 border=0><img src="./1000.png"></td><td align="center" padding=0 border=0><img src="./2000.png"></td>
 	</tr>
 	<tr>
-      <td align="center"><img src="./3000.png"></td><td align="center"><img src="./4000.png"></td><td align="center"><img src="./6000.png"></td>
+      <td align="center" padding=0 border=0><img src="./3000.png"></td><td align="center" padding=0 border=0><img src="./4000.png"></td><td align="center" padding=0 border=0><img src="./6000.png"></td>
 	</tr>
 </table>
