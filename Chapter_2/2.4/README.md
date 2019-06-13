@@ -15,13 +15,13 @@ If the stride in any direction is smaller than the kernel size, parts of the ima
 	kernel_size=100, stride=50
 ```
 
-<img src="./CNN_original.png" width="300px"/> <img src="./CNN_example_explodedImage.png" width="300px"/>
+<img src="./CNN_original.png" height="300px"/> <img src="./CNN_example_explodedImage.png" height="300px"/>
 
 
 ## Covolutions
 The effect of covolving an RGB image (over all 3 color channels) for different `stride` and `kernel_size` parameters:
-<img src="./CNN_after_conv1.png" width="300px"/> <img src="./CNN_after_conv2.png" width="300px"/>
+<img src="./CNN_after_conv1.png" height="300px"/> <img src="./CNN_after_conv2.png" height="300px"/>
 
 ## Max pooling
 The effect of max pooling on an RGB image for different `stride` and `kernel_size` parameters:
-<img src="./CNN_after_pooling1.png" width="300px"/> <img src="./CNN_after_pooling2.png" width="300px"/>
+<img src="./CNN_after_pooling1.png" height="300px"/> <img src="./CNN_after_pooling2.png" height="300px"/>
