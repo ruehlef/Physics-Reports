@@ -1,7 +1,6 @@
 # import JAVAPLEX jar into Jython
 import sys
-#sys.path.append('/path/to/javaplex.jar')
-sys.path.append('/Users/faruehle/work/Programs/javaplex/library/javaplex.jar')
+sys.path.append('/path/to/javaplex.jar')
 
 import edu.stanford.math.plex4 as p4
 import edu.stanford.math.plex4.api.Plex4 as plex4
