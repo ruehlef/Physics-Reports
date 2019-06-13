@@ -2,17 +2,17 @@
 In this chapter we illustrate the computation of persistent homology of a point cloud that lies on a cylinder surface in JAVAPLEX. We compute both the persistent homology over a finite field and via a lazy witness complex that randomly select landmark points
 
 ## Jython Implementation
-The Jython implementation can be found [here](./Jython/). Just run 
+The Jython implementation can be found [here](./Jython). Just run 
 
 ```
 jython Persistent_Homology_in_Jython.py
 ```
 
-You will have to set the path to your `javaplex.jar` in the file `Persistent_Homology_in_Jython.py`.
+You will have to set the path to your `javaplex.jar` in the file [Persistent_Homology_in_Jython.py](./Jython/Persistent_Homology_in_Jython.py).
 
 
 ## Java Implementation
-The Java implementation can be found [here](./JAVA/). Compile and run with
+The Java implementation can be found [here](./JAVA). Compile and run with
 
 ```
 javac -classpath /path/to/javaplex.jar PersistentHomologyInJava.java
