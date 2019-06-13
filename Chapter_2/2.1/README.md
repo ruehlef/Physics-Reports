@@ -1,11 +1,10 @@
 # Chapter 2.1
 
-![](Keras_Example/example_function.png =100x)
 
 ## Keras example
 Run with `python Keras_Example.py` or look at the Jupyter notebook [Keras_Example.ipynb](./Keras_Example/Keras_Example.ipynb).
 
-![Prediction Keras](Keras_Example/example_function.png =300x)
+<img src=./Keras_Example/example_function.png width="300px"/>
 ![Loss Keras](Keras_Example/example_loss.png =300x "Loss for function in Keras.")
 
 ## Mathematica example
