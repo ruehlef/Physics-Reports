@@ -38,7 +38,7 @@ Feel free to use and modify the code at will. If you find this useful, you could
 	
 * [Chapter 9](Chapter_9) introduces several codes related to **supervised learning techniques** beyond neural networks.
   * In [Chapter 9.2](Chapter_9/9.2) we introduce various **Decision Trees** and **Random Forest** implementations that can be used in clustering or regression
-  * In [Chapter 9.3](Chapter_9/9.3) we introduce various **Support Vector Machines**for clustering or regression
+  * In [Chapter 9.3](Chapter_9/9.3) we introduce various **Support Vector Machines** for clustering or regression
   
   
 # How to get started  with the code
