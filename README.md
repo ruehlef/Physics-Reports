@@ -32,7 +32,7 @@ Feel free to use and modify the code at will. If you find this useful, you could
 
 * [Chapter 8](Chapter_8) introduces several codes related to **Reinforcement learning**. We provide an example for both tabular and deep RL.
   * In [Chapter 8 SARSA](Chapter_8/SARSA) we introduce a tabular method to solve a maze using the SARSA algorithm. This example is discussed in Chapter 8.5 of the book.
-  * In [Chapter 8 Deep_RL](Chapter_8/Deep_RL) we illustrate the **A3C** and **DQN** algorithm discussed in Chapter 8.6 of the book by training an agent to play Tic Tac Toe. This is meant to illustrate the algorithms and to show how to use Chainerrl together with the gym environment to train RL agents. You can then play the game against the trained agent to see how it behaves, which tactics it learned/didn't learn, which moves it was considering, etc.
+  * In [Chapter 8 Deep_RL](Chapter_8/Deep_RL) we illustrate the **A3C** and **DQN** algorithm discussed in Chapter 8.6 of the book by training an agent to play Tic Tac Toe. This is meant to illustrate the algorithms and to show how to use ChainerRL together with the gym environment to train RL agents. You can then play the game against the trained agent to see how it behaves, which tactics it learned/didn't learn, which moves it was considering, etc. The DQN agent plays somewhat better than the A3C agent.
       - [A3C](Chapter_8/Deep_RL/A3C) contains the A3C implementation
 	  - [DQN](Chapter_8/Deep_RL/DQN) contains the DQN implementation
 	
