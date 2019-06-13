@@ -3,7 +3,7 @@
 ## Keras example
 Run with `python Keras_Example.py` or look at the Jupyter notebook [Keras_Example.ipynb](Keras_Example/Keras_Example.ipynb).
 
-![Prediction Keras](Keras_Example/example_function.pdf "Predicted region of stability.")
+![Prediction Keras](https://github.com/ruehlef/Physics-Reports/tree/master/Chapter_2/2.1/Keras_Example/example_function.pdf "Predicted region of stability.")
 ![Loss Keras](Keras_Example/example_loss.pdf "Loss for function in Keras.")
 
 ## Mathematica example
