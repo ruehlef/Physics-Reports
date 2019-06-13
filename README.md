@@ -44,7 +44,15 @@ Feel free to use and modify the code at will. If you find this useful, you could
 # How to get started  with the code
 Most of the examples use Python. Chances are you already have (at least) one Python environment on your system. If not, install one (e.g. Miniconda or Anaconda). I used python3 in all my examples. I think they should also work with python2, but I have not tested them. Since python2 support runs out end of 2019, it is probably better to start with python3 anyways.
 
-SOme examples also illustrate techniques with mathematica, and for the Persistent Homology Code, you'llneed Jython or JAVA.
+I also recommend using a development environemnt for python. I use PyCharm, but there are many different ones around. This has several advantages:
+
+* You can easily debug your code by adding breakpoints, looking at and chaning the value of variables in your program, etc.
+* You can easily create a virtual envoironment, install packages, etc.
+* You get code completion, which makes programming faster
+* You get suggestions for clean coding (using the PEP conventions). This helps to write code following the typical conventions. Learning these makes it easier for you to read other people's code and for others to read yours
+
+Some examples also illustrate techniques with Mathematica, and for the Persistent Homology Code, you'll need Jython or JAVA.
+
 
 ### Create a virtual python environment
 It is best to create a virtual environment and install the packages there, in order to not interfere with the installation you already have, and to be able to use different versions of packages for different projects. Setting up a virtual environment is much easier than it sounds. If you do not want to do this, you can skip it, but it might actually be more difficult to install the packages you need without a virtual environment.
