@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<a href="http://htmlpreview.github.com/?https://github.com/ruehlef/Physics-Reports/tree/master/Chapter_2/2.1/Mathematica_Example/Mathematica_Example.htm">To display this file properly open it outside of Github.</a>
+<a href="http://htmlpreview.github.com/?https://github.com/ruehlef/Physics-Reports/tree/master/Chapter_2/2.1/Mathematica_Example/Mathematica_Example.htm">To display this file properly, open it outside of Github.</a>
 <br/><br/>
 
 <p class="Section">
