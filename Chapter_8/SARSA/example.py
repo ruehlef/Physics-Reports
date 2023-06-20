@@ -33,6 +33,18 @@ print("I moved right")
 #                                Part 1: Play the game once to see an untrained agent at work                          #
 ########################################################################################################################
 agent.reset()
+world = agent.render_world()
+plt.ioff()
+plt.tight_layout()
+plt.axis("off")
+plt.imshow(world, interpolation="nearest")
+plt.draw()
+plt.title("Maze layout", fontsize=24)
+plt.tight_layout()
+plt.show()
+plt.close()
+
+agent.reset()
 agent.close_world_display()
 print("Let the game begin...")
 
@@ -119,12 +131,13 @@ plt.close('all')
 # The code is essentially identical to the one used above, but now carried out 10 000 times
 training_episodes = 6001
 snapshot_interval = 1000
-t=1
+t = 1
 q_snapshot = []
 for i in range(training_episodes):
     if i % 1000 == 0:
         print("I'm playing game " + str(i) + " / " + str(training_episodes))
-    if i % snapshot_interval == 0: q_snapshot.append(copy.deepcopy(Q))
+    if i % snapshot_interval == 0:
+        q_snapshot.append(copy.deepcopy(Q))
     if i % 1000 == 0:
         t += 0.01
     agent.reset()
@@ -148,7 +161,7 @@ for i in range(training_episodes):
 
         # Update Q
         # alpha = alpha_W / update_counts_sa[current_state][current_action]
-        alpha=0.2
+        alpha = 0.2
         update_counts_sa[current_state][current_action] += 0.005
         Q[current_state][current_action] = Q[current_state][current_action] + alpha * (reward + gamma * Q[next_state][next_action] - Q[current_state][current_action])
 
@@ -166,16 +179,6 @@ plt.close('all')
 ########################################################################################################################
 #                           Show snapshots of what the agent has learned                                               #
 ########################################################################################################################
-agent.reset()
-world = agent.render_world()
-plt.ioff()
-plt.tight_layout()
-plt.axis("off")
-plt.imshow(world, interpolation="nearest")
-plt.draw()
-plt.title("Maze layout", fontsize=24)
-plt.show()
-plt.close()
 
 episode = 0
 obj_pos = []
@@ -189,16 +192,16 @@ for Q in q_snapshot:
     world = np.zeros([5+2, 5+2])
     world = np.full_like(world, -1.)
 
-    arrow_dict={}
+    arrow_dict = {}
     # find the best action and map the colors according to certainty
-    for pos, vals in Q.items():  #iterate over grid positions
-        directions , q = vals.keys(), vals.values()
+    for pos, vals in Q.items():  # iterate over grid positions
+        directions, q = list(vals.keys()), list(vals.values())
         best, worst = max(q), min(q)
         shift = -worst
 
         # find best direction for arrow, skip for objects
         if pos not in obj_pos:
-            mpos=0
+            mpos = 0
             for mpos in range(4):
                 if q[mpos] == best:
                     break
@@ -229,7 +232,7 @@ for Q in q_snapshot:
 
     # add arrows: [0, 1, 2, 3] = up, down, left, right
     for pos, arr_dir in arrow_dict.items():
-        if Q[(pos[0]-1,pos[1]-1)].values() == [0, 0, 0, 0]:  # field never visited
+        if Q[(pos[0]-1, pos[1]-1)].values() == [0, 0, 0, 0]:  # field never visited
             continue
         if arr_dir == 0:
             xstart, ystart = pos[0], pos[1] + 0.25

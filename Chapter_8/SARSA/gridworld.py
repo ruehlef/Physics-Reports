@@ -3,12 +3,12 @@
 # Note that I completely change the game (rules, rewards, goal, colors)
 
 import numpy as np
-np.random.seed(4)
 import itertools
-import scipy.misc
+from PIL import Image
 import matplotlib as mpl
 mpl.use('TkAgg')  # needed on mac with virtual environment
 import matplotlib.pyplot as plt
+np.random.seed(4)
 
 
 # The gridworld environment
@@ -17,13 +17,8 @@ class GameEnv:
         # initialization of the world
         self.sizeX = 5
         self.sizeY = 5
-        self.num_pits=7
+        self.num_pits = 7
         self.state = ()  # A state in gridworld is just the (x,y) coordinate pair of the worker
-        plt.ioff()  # there is currently a bug for Mac users which requires turning this off
-        self.world_canvas = plt.figure("Maze")
-        self.world_canvas.suptitle('Blue: Worker, Red: Pitfalls, Green: Exit')
-        self.im = None
-        plt.axis("off")
         self.objects = []
         self.initial_x = 0
         self.initial_y = 0
@@ -50,6 +45,13 @@ class GameEnv:
         # maximal n umber of steps before we give up solving the maze
         self.max_steps = 1000
 
+        # plotting the maze
+        plt.ioff()  # there is currently a bug for Mac users which requires turning this off
+        self.world_canvas = plt.figure("Maze")
+        self.world_canvas.suptitle('Blue: Worker, Red: Pitfalls, Green: Exit')
+        self.im = None
+        plt.axis("off")
+
         # initialize and plot the world
         self.world = self.initialize_world()
         self.snapshot_world = self.initialize_world()
@@ -65,10 +67,10 @@ class GameEnv:
 
         # fix position of exit and worker
         # maze_exit = GameOb('exit', self.exit_reward, self.new_position(), 1, [0, 1, 0, 1])
-        maze_exit = GameOb('exit', self.exit_reward, [4,4], 1, [0, 1, 0, 1])
+        maze_exit = GameOb('exit', self.exit_reward, [4, 4], 1, [0, 1, 0, 1])
         self.objects.append(maze_exit)
         # worker = GameOb('worker', None, self.new_position(), 1, [0, 0, 1, 1])
-        worker = GameOb('worker', None, [0,0], 1, [0, 0, 1, 1])
+        worker = GameOb('worker', None, [0, 0], 1, [0, 0, 1, 1])
         self.objects.append(worker)
         for i in range(self.num_pits):  # add pitfalls
             pitfall = GameOb('pitfall', self.pitfall_penalty, self.new_position(), 1, [1, 0, 0, 1])
@@ -192,7 +194,7 @@ class GameEnv:
     def get_state(self):
         for obj in self.objects:
             if obj.name == 'worker':
-                return (obj.x, obj.y)
+                return obj.x, obj.y
 
     # check whether an action is possible, i.e. whether a wall is blocking the way
     def is_possible_action(self, action):
@@ -207,8 +209,6 @@ class GameEnv:
             is_possible = True
 
         return is_possible
-
-
 
     ####################################################################################################################
     # ignore the code from here on, it just draws the world and represents the objects in the game.                    #
@@ -239,21 +239,22 @@ class GameEnv:
         a[1:-1, 1:-1, :] = 1
         for item in self.objects:
             if a[item.y + 1, item.x + 1, 0] == 1 and a[item.y + 1, item.x + 1, 1] == 1 and a[item.y + 1, item.x + 1, 2] == 1:  # is completely white
-                for i in range(len(item.channel)): a[item.y + 1:item.y + item.size + 1, item.x + 1:item.x + item.size + 1, i] = item.channel[i]
+                for i in range(len(item.channel)):
+                    a[item.y + 1:item.y + item.size + 1, item.x + 1:item.x + item.size + 1, i] = item.channel[i]
             else:  # other object on the field, overlay worker with pitfalls / exit
                 for i in range(len(item.channel)):
                     if a[item.y + 1, item.x + 1, i] == 0:
                         a[item.y + 1:item.y + item.size + 1, item.x + 1:item.x + item.size + 1, i] += item.channel[i]
-        a = scipy.misc.imresize(a[:, :], [84, 84, 4], interp='nearest', mode="RGBA")
+        a = np.array(Image.fromarray(np.uint8(a * 255)).resize((84, 84), Image.NEAREST))
         return a
 
 
 # This represents an object in the game: worker, pitfall, exit
 class GameOb:
-    def __init__(self, name, reward, coordinates, size, RGBA):
+    def __init__(self, name, reward, coordinates, size, rgba):
         self.x = coordinates[0]
         self.y = coordinates[1]
         self.size = size
-        self.channel = RGBA
+        self.channel = rgba
         self.reward = reward
         self.name = name

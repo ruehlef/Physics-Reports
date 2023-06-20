@@ -38,33 +38,33 @@ def animate_steps(agent, window_title, fig_title=""):
     plt.ioff()
     fig = plt.figure(window_title)
     fig.suptitle(fig_title)
-    mySteps = agent.steps_taken
+    my_steps = agent.steps_taken
     agent.reset()
     step_counter = 0
-    explore_step = mySteps[step_counter]
     im = plt.imshow(agent.render_world(), animated=True)
 
     def update_fig(*args):
         global explore_step, step_counter
-        if step_counter < len(mySteps):
-            explore_step = mySteps[step_counter]
-        else:
-            step_counter = 0
-            explore_step = mySteps[step_counter]
+        if step_counter == 0:
             agent.reset()
-        agent.step(explore_step, False)
-        step_counter += 1
+        elif step_counter <= len(my_steps):
+            explore_step = my_steps[step_counter-1]
+            agent.step(explore_step, False)
+        else:
+            step_counter = -1
+            agent.reset()
         im.set_array(agent.render_world())
         plt.draw()
-        return im,
+        step_counter += 1
+        return im
 
     plt.axis("off")
     plt.savefig("./" + window_title + "_step_0.pdf", dpi=300, bbox_inches='tight')
-    for f in range(len(mySteps)):
-        plt.axis("off")
-        update_fig()
-        # uncomment to save each step individualy as a .pdf
-        # plt.savefig("./" + window_title + "_step_" + str(f+1) + ".pdf", dpi=300, bbox_inches='tight')
-
-    ani = animation.FuncAnimation(fig, update_fig, interval=150, blit=True, frames=len(mySteps)-1, repeat=True)
-    plt.show(window_title)
+    # uncomment to save each step individually as a .pdf
+    # for f in range(len(my_steps)):
+    #     plt.axis("off")
+    #     update_fig()
+    #     plt.savefig("./" + window_title + "_step_" + str(f+1) + ".pdf", dpi=300, bbox_inches='tight')
+    ani = animation.FuncAnimation(fig, update_fig, interval=300, blit=False, frames=len(my_steps)+1, repeat=True)
+    plt.show()
+    agent.close_world_display()
